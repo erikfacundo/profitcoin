@@ -1,0 +1,346 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Goldman', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(/img/bgnubes.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.titulo :last-child{
+  font-size: 100px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0px 30px 0px;
+  font-family: "Goldman";
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo {
+  color: #333;
+  text-align: center;
+}
+
+.datos,
+.usd,
+.pnl,
+.actividad,
+.resultado {
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 58%);
+  padding: 20px;
+  place-self: inherit;
+
+}
+
+
+.contenedorseccion{
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 58%);
+  padding: 20px
+}
+.contenedorseccion :last-child{
+margin-top: 10px;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  height: 25px;
+  text-align: center;
+}
+
+button {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+
+
+}
+
+button#ingresarMonto {
+  background-color: #54c583;
+  /* Verde */
+  width: 100%;
+}
+.reset{
+  background-color: #666;
+}
+button#ingresarGanancia,
+button#ingresarGananciaPNL {
+  background-color: #54c583;
+  /* Verde */
+}
+
+button#ingresarPerdida,
+button#ingresarPerdidaPNL {
+  background-color: #ff8c90;
+  /* Rojo */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.actividad {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+.resultado {
+  max-width: 550px;
+}
+
+.contenedorprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 800px;
+}
+
+.contenedor {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  /*Si la pantalla crece mas de 600px se queda en 600 (es el maximo) si es menos de 600 se achica por porcentaje*/
+  width: 100%;
+  /*Se achica por porcentaje*/
+  margin-left: 30px;
+}
+
+.contenedor3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#actividad {
+  width: 98%;
+  height: 93%;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  margin: auto;
+}
+
+.titulo{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedorseccion,.resultado,.actividad{
+/* From https://css.glass */
+background: rgba(38, 18, 18, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(38, 18, 18, 0.1);
+}
+
+/*Footer*/
+
+.footer{
+  position:unset;
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  display: flow-root;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  
+  }
+  
+/*Pantalla menor a esta medida toma las siguientes declaraciones*/
+@media screen and (max-width:1183px) {
+
+  .contenedor2,
+  .contenedor3 {
+    margin-left: 0px;
+  }
+
+}
+
+/*Pantalla menor a esta medida toma las siguientes declaraciones*/
+@media screen and (max-width:800px) {
+
+  .contenedor2,
+  .contenedor3 {
+    margin-left: 0px;
+  }
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  background-color: black;
+  margin: 120px 0px 0;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 10px 0;
+  color: #ff8c90;
+  text-transform: uppercase;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col ul li {
+  color: white;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+.address ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  cursor: pointer;
+  color: lightgray;
+  font-weight: bold;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .logo h1 {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .address {
+    width: 1000px;
+    display: block;
+  }
+  .address h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h2 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h2 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
